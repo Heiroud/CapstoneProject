@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UI-Alperf: Alternative Performance</title>
+   <link href="assets/img/ui.png" rel="icon">
+
+   <!-----=====---- VENDOR CSS FILES ----======----->
+   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+   <!-----=======--- TEMPLATE MAIN CSS FILE ---========-->
+   <link href="assets/css/index.css" rel="stylesheet">
+   <style>
+      .alert{
+         position: fixed;
+         top: 25px;
+         right: 20px;
+         z-index: 1000;
+         min-width: 250px;
+         height: 60px;
+      }
+      .alert button{
+         background: none;
+         border: none;
+         display: flex;
+         align-items: center;
+         color: #3E4A3C;
+         transition: .5s;
+         height: 20px;
+         font-size: 25px;
+         margin-right: -30px;
+         margin-top: 3px;
+      }
+   </style>
+</head>
+<body>
+
+   <div class="alert alert-success alert-dismissible fade show d-flex justify-content-between" role="alert">
+      <p><strong>Success</strong></p>
+      <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x"></i></button>
+   </div>
+   <!---------------- ======= HOME SECTION ======= -------------->
+   <section id="home" class="d-flex align-items-center">
+      <div class="container">
+         <div class="row">
+            <div id="home-content" class="col-lg-7 flex-lg-column pt-3">
+               <div>
+                  <h1>UI-ALPerf: UI Active Learning Performance</h1>
+                  <h3>PHINMA UI's performance tracking for instructors and students.</h3>
+               </div>
+            </div>
+
+            <div class="col-lg-4 flex-lg-column form">
+
+               <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#faculty-login">Faculty</button>
+                  </li>
+
+                  <li class="nav-item">
+                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#admin-login">Admin</button>
+                  </li>
+               </ul>
+
+               <div class="tab-content">
+                  <div class="tab-pane fade show active faculty-login" id="faculty-login">
+                  
+                     <form class="row g-3">
+                        <div class="col-md-12">
+                           <div class="box">
+                              <input type="text" class="form-control" placeholder="Faculty Username">
+                           </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                           <div class="box">
+                              <input type="password" class="form-control mb-2" id="Faculty-Password" placeholder="Password">
+                           </div>
+
+                           <label class="label-showPassword">
+                              <input type="checkbox" id="faculty-show_password"> Show Password
+                           </label>
+                           <script>
+                              const Fpassword = document.getElementById("Faculty-Password");
+                              const FshowPasswordCheckbox = document.getElementById("faculty-show_password");
+                              
+                              FshowPasswordCheckbox.addEventListener("change", function() {
+                                 const type = FshowPasswordCheckbox.checked ? "text" : "password";
+                                 Fpassword.type = type;
+                              });
+                           </script>
+                        </div>
+
+                        <div class="text-center button">
+                           <input type="submit" value="Log In" class="w-100">
+                        </div>
+
+                        <a href="faculty/faculty_dashboard.html" class="text-center">Forgot Password?</a>
+
+                        <hr>
+
+                        <div class="signUp-button">
+                           <button type="button" data-bs-toggle="modal" data-bs-target="#CreateAccountModal">Create Account</button>
+                        </div>
+
+                     </form>
+
+                  </div>
+
+                  <div class="tab-pane fade admin-login" id="admin-login">
+                     <form class="row g-3">
+
+                        <div class="col-md-12">
+                           <div class="box">
+                              <input type="text" class="form-control" placeholder="Admin Username">
+                           </div>
+                        </div>
+                        <div class="col-md-12 mb-2">
+                           <div class="box">
+                              <input type="password" class="form-control mb-2" id="Admin-Password" placeholder="Password">
+                           </div>
+
+                           <label class="label-showPassword">
+                              <input type="checkbox" id="admin-show_password"> Show Password
+                           </label>
+                           <script>
+                              const Apassword = document.getElementById("Admin-Password");
+                              const AshowPasswordCheckbox = document.getElementById("admin-show_password");
+                              
+                              AshowPasswordCheckbox.addEventListener("change", function() {
+                                 const type = AshowPasswordCheckbox.checked ? "text" : "password";
+                                 Apassword.type = type;
+                              });
+                           </script>
+                        </div>
+
+                        <div class="text-center button">
+                           <input type="submit" value="Log In" class="w-100">
+                        </div>
+
+                        <a href="admin/admin_dashboard.html" class="text-center">aaaaa</a>
+
+                        <hr>
+
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section><!-- END HOME -->
+
+   <!---------------- ======= FOOTER ======= -------------->
+   <footer id="footer">
+      <div class="container">
+         <div class="footer-top">
+            <div class="container">
+               <div class="row">
+
+                  <div class="col-lg-4 col-md-6 footer-contact">
+                     <h3>UI-Alperf</h3>
+                     <p>
+                        Rizal St. <br>
+                        Iloilo City Proper, 5000<br>
+                        Philippines <br><br>
+                        <strong>Phone:</strong>09167383825<br>
+                        <strong>Email:</strong> info@example.com<br>
+                     </p>
+                  </div> 
+                  <div class="col-lg-4 col-md-6 footer-links">
+                     <h4>Our Social Networks</h4>
+                     <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                     </div>
+                  </div>
+                              
+               </div>
+            </div>
+         </div>
+         <div class="container py-4 footer-bottom">
+            <div class="copyright">
+               &copy; 2023 <strong><span> UI-Alperf: Alternative Performance </span></strong>. All Rights Reserved
+            </div>
+         </div>
+      </div>
+   </footer><!-- END FOOTER -->
+
+<!---====--- VENDOR JS FILES ---====--->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!---====--- TEMPLATE MAIN JS FILE ---====--->
+<script src="assets/js/main.js"></script>
+
+
+<!-----------===============- CREATE ACCOUNT MODAL -===============------------------>
+<div id="CreateAccountModal" class="modal">
+   <div class="modal-dialog modal-dialog-centered">
+      <div id="CreateAccount-Modalcontent" class="modal-content">  
+         <div id="CreateAccount-Modalheader" class="modal-header">
+            <h2>Sign Up</h2>
+            <button type="button"data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+         </div>
+            
+         <div id="CreateAccount-Modalbody" class="modal-body">
+            <form>
+
+               <div class="user-details row g-2">
+                  <div class="col-md-6">
+                     <div class="box">
+                        <input type="text" class="form-control" placeholder="First Name">
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="box">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                     </div>
+                  </div>
+
+                  <div class="col-md-12">
+                     <div class="box">
+                        <input type="email" class="form-control" placeholder="Username">
+                     </div>
+                  </div>
+
+                  <div class="col-md-12">
+                     <div class="box">
+                        <input type="email" class="form-control" placeholder="Email">
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="box">
+                        <input type="password" class="form-control" placeholder="Password">
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="box">
+                        <input type="password" class="form-control" placeholder="Confirm Password">
+                     </div>
+                  </div>
+
+                  <div class="mb-3 signUp-showPass">
+                     <input type="checkbox" id="showPassword">
+                     <label> Show Password </label>
+                  </div>
+                  <script>
+                     const showPasswordCheckbox = document.getElementById("showPassword");
+                     const passwordFields = document.querySelectorAll('input[type="password"]');
+
+                     showPasswordCheckbox.addEventListener("change", function () {
+                        const showPassword = this.checked;
+
+                        passwordFields.forEach(function (field) {
+                           field.type = showPassword ? "text" : "password";
+                        });
+                     });
+                  </script>
+               </div>
+
+               <div class="text-center signUp-submit">
+                  <input type="reset" value="Clear">
+                  <input type="submit" value="Sign Up">
+               </div>
+
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+</body>
+</html>`

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> UI-Alperf | Faculty | Report </title>
+  <link href="../assets/img/ui.png" rel="icon">
+
+  <!----=======-- Vendor CSS Files --=======---->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!----=======-- Main CSS File --=======---->
+  <link href="../assets/css/faculty.css" rel="stylesheet">
+</head>
+<body>
+  <!----=======-- HEADER --=======---->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <!----=======-- LOGO --=======---->
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="faculty_dashboard.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/ui.png">
+        <span class="d-none d-lg-block"> UI-Alperf </span>
+      </a>
+      
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- END LOGO -->
+
+    <!----=======-- ICONS NAVIGATION --=======---->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <!----=======-- PROFILE NAV --=======---->
+        <li class="nav-item dropdown pe-3">
+
+          <!----=======-- PROFILE IMAGE ICON --=======---->
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+
+            <div class="nav-img">
+              <img src="../assets/img/uk.jpg" alt="Profile" class="dropdown-toggle">
+            </div>
+
+          </a><!-- END PROFILE IMAGE ICON -->
+
+          <!----=======-- PROFILE DROPDOWN ITEMS --=======---->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Mylene Velasco</h6>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="faculty_profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#settings_modal">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <form action="" method="">
+
+                <div class="logout d-flex align-items-center">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <input type="submit" name="logout" value="Log Out">
+                </div>
+                
+              </form>
+           </li>
+          </ul><!-- END PROFILE DROPDOWN ITEMS -->
+        </li><!-- END PROFILE NAV -->
+      </ul>
+    </nav><!-- END ICONS NAVIGATION -->
+  </header><!-- END HEADER -->
+
+  <!----=======-- SIDEBAR --=======---->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <h2 class="d-block d-lg-none">UI-Alperf</h2>
+      </li>
+
+      <!----=======-- DASHBOARD NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="faculty_dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- END DASHBOARD NAV -->
+
+      <li class="nav-heading">Pages</li>
+
+      <!----=======-- REPORT NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link" data-bs-target="#results-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-card-heading"></i></i></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="results-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="faculty_report.html" class="active">
+              <i class="bi bi-circle"></i><span>Section</span>
+            </a>
+          </li>
+          <li>
+            <a href="faculty_report.html">
+              <i class="bi bi-circle"></i><span>Section</span>
+            </a>
+          </li>
+          <li>
+            <a href="faculty_report.html">
+              <i class="bi bi-circle"></i><span>Section</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- END REPORT NAV -->
+
+      <!----=======-- PROFILE PAGE NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="faculty_profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- END PROFILE PAGE NAV -->
+
+      <!----=======-- SETTINGS NAV --=======---->
+      <li class="nav-item">
+         <a class="nav-link collapsed" data-bs-toggle="modal" data-bs-target="#settings_modal">
+           <i class="bi bi-gear"></i>
+           <span>Settings</span>
+         </a>
+       </li><!-- END SETTINGS NAV -->
+    </ul>
+  </aside><!-- END SIDEBAR-->
+
+   <!----=======-- MAIN --=======---->
+   <main id="main" class="main">
+
+      <!----=======-- PAGE TITLE --=======---->
+      <div class="pagetitle">
+         <nav>
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="faculty_dashboard.html">User</a></li>
+            <li class="breadcrumb-item active">Report</li>
+         </ol>
+         </nav>
+      </div><!-- END PAGE TITLE -->
+
+      <section class="section report">
+
+        <div class="row">
+          <div class="col-xl-12 rrr">
+            <div class="card">
+
+              <div class="card-header">
+                  <div class="row">
+                    <div class="nnn col-12 col-md-3 "><strong> Section: </strong> Rosal </div>
+                    <div class="nnn col-12 col-md-3"><strong> Instructor: </strong> Doe </div>
+                    <div class="nnn col-12 col-md-3"><strong> No. Students: </strong> 30 </div>
+                    <div class="nnn col-12 col-md-3"><strong> Date: </strong> 07/11/2023 </div>
+                    <div class="nnn col-12 col-md-3"><strong> Observer Name: </strong> Velasco </div>
+                  </div>
+              </div>
+
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-xl-6 mb-2">
+                    <h5 class="mb-4">Students doing</h5>
+
+                    <div class="chart">
+                      <canvas id="studentsPieChart" style="max-height: 320px;"></canvas>
+
+                      <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                          new Chart(document.querySelector('#studentsPieChart'), {
+                          type: 'pie',
+                          data: {
+                            labels: [
+                                'Red',
+                                'Blue',
+                                'Yellow'
+                            ],
+                            datasets: [{
+                                label: 'My First Dataset',
+                                data: [300, 50, 100],
+                                backgroundColor: [
+                                'rgb(255, 99, 132)',
+                                'rgb(54, 162, 235)',
+                                'rgb(255, 205, 86)'
+                                ],
+                                hoverOffset: 4
+                            }]
+                          }
+                          });
+                        });
+                      </script>
+                    </div>
+
+                    <p class="total mt-3">Total Score : 2</p>
+
+                    <hr>
+
+                    <div class="row class-code">
+                      <div class="col-md-6 codek">
+                        <p><strong>L</strong> - Listening: 100</p>
+                        <p><strong>Ind</strong> - Individual thinking: 100</p>
+                        <p><strong>WG</strong> - Worksheet group work: 100</p>
+                        <p><strong>AnQ</strong> - Answering questions: 100</p>
+                        <p><strong>SQ</strong> - Student questions: 100</p>
+                        
+                      </div>
+
+                      <div class="col-md-6 codek">
+                        <p><strong>WC</strong> - Whole class discussion: 100</p>
+                        <p><strong>SP</strong> - Student presentation: 100</p>          
+                        <p><strong>TQ</strong> - Test/quiz: 100</p>
+                        <p><strong>W</strong> - Waiting: 100</p>
+                        <p><strong>O</strong> - Other: 100</p>
+                      </div>
+                    </div>
+
+                    <hr>
+
+                  </div>
+
+                  <div class="col-xl-6 mb-2">
+                    <h5 class="mb-4">Instructor doing</h5>
+
+                    <div class="chart">
+                      <canvas id="instructorPieChart" style="max-height: 320px;"></canvas>
+
+                      <script>
+                        document.addEventListener("DOMContentLoaded", () => {
+                          new Chart(document.querySelector('#instructorPieChart'), {
+                            type: 'pie',
+                            data: {
+                            labels: [
+                              'Red',
+                              'Blue',
+                              'Yellow'
+                            ],
+                            datasets: [{
+                              label: 'My First Dataset',
+                              data: [100, 300, 50],
+                              backgroundColor: [
+                                  'rgb(255, 99, 132)',
+                                  'rgb(54, 162, 235)',
+                                  'rgb(255, 205, 86)'
+                              ],
+                              hoverOffset: 4
+                            }]
+                            }
+                          });
+                        });
+                      </script>
+                    </div>
+
+                    <p class="total mt-3">Total Score : 2</p>
+
+                    <hr>
+
+                    <div class="row class-code">
+                      <div class="col-md-6 codek">
+                        <p><strong>Lec</strong> - Lecturing: 100</p>
+                        <p><strong>RtW</strong> - Writing: 100</p>
+                        <p><strong>FUp</strong> - Follow-up: 100</p>
+                        <p><strong>AnQ</strong> - Answering questions: 100</p>     
+                        <p><strong>PQ</strong> - Posing questions: 100</p>          
+                      </div>
+
+                      <div class="col-md-6 codek">
+                        <p><strong>MG</strong> - Moving/Guiding: 100</p>
+                        <p><strong>1o1</strong> - One-on-one: 100</p>
+                        <p><strong>D/V</strong> - Demonstration: 100</p>
+                        <p><strong>W</strong> - Waiting: 100</p>
+                        <p><strong>O</strong> - Other: 100</p>
+                      </div>  
+                    </div>
+
+                    <hr>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+   </main><!-- END MAIN -->
+
+  <!----=======-- FOOTER --=======---->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; 2023 <strong><span> UI-Alperf: Alternative Performance </span></strong><br> All Rights Reserved
+    </div>
+  </footer><!-- END FOOTER -->
+
+<!----=======-- Vendor JS Files --=======---->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/chart.js/chart.umd.js"></script>
+
+<!----=======-- Main JS File --=======---->
+<script src="../assets/js/main.js"></script>
+
+
+
+
+
+<!-----------------------------------================================- MODALS -==============================--------------------------------->
+
+
+
+
+
+<!-----------===============- SETTINGS MODAL -===============------------------>
+<div class="modal" id="settings_modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header settings_modal_header">
+        <h5> Settings </h5>
+        <button type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+      </div>
+
+      <div class="modal-body settings_modal_body">
+        <ul class="nav nav-tabs">
+          <li>
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#settings_general">General</button>
+          </li>
+
+          <li>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#settings_data_control">Data Controls</button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+
+          <div class="tab-pane fade show active" id="settings_general">
+
+            <div class="settings_theme">
+              <p>Theme</p>
+
+              <div class="theme_button">
+                <button class="light">Light</button>
+                <button class="dark">Dark</button>
+              </div>
+            </div>
+      
+            <hr>
+  
+            <div class="settings_about">
+              <a href="" class="nav-link collapsed" data-bs-target="#settings_about" data-bs-toggle="collapse">
+                <span>About</span>
+                <i class='bx bxs-chevron-down'></i>
+              </a>
+              <ul id="settings_about" class="nav-content collapse">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                  harum aliquid molestiae at ratione minus? Sed distinctio eligendi accusamus sunt?</p>
+              </ul>
+            </div>
+
+          </div>
+  
+          <div class="tab-pane fade" id="settings_data_control">
+
+            <div class="settings_clear_works d-flex justify-content-between align-items-center">
+              <p>Clear All Works</p>
+
+              <div class="clear_works_button">
+                <button type="button" data-bs-target="#clear_works_confirmation" data-bs-toggle="modal">Clear</button>
+              </div>
+            </div>
+
+            <hr>
+  
+            <div class="settings_delete_account d-flex justify-content-between align-items-center">
+              <p>Delete Account</p>
+
+              <div class="delete_account_button">
+                <button type="button" data-bs-target="#delete_account_confirmation" data-bs-toggle="modal">Delete</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------===============- SETTINGS CLEAR DATA MODAL CONFIRMATION -===============------------------>
+<div class="modal" id="clear_works_confirmation">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Clear all works?</h5>
+      </div>
+      <div class="modal-body">
+        All of your works will be permanently deleted
+      </div>
+      <div class="modal-footer p-2 clear_works_confirmation">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#settings_modal">Cancel</button>
+
+        <form action="">
+          <input type="submit" value="Clear Data">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------===============- SETTINGS DELETE ACCOUNT MODAL CONFIRMATION -===============------------------>
+<div class="modal" id="delete_account_confirmation">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Account?</h5>
+      </div>
+      <div class="modal-body">
+        Your account will be permanently deleted
+      </div>
+      <div class="modal-footer p-2 delete_account_confirmation">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#settings_modal">Cancel</button>
+
+        <form action="">
+          <input type="submit" value="Delete Account">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

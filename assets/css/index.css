@@ -1,0 +1,351 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #F0F0F0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f7f6;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4A6646;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7B9977; 
+}
+a {
+  text-decoration: none;
+}
+.form-control:focus{
+  box-shadow:0 0 0 .12rem #C2DFBE;
+}
+
+/*---------------------------------------------------------
+----------HOME STYLES------
+---------------------------------------------------------*/
+#home{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#dde0d7b5, #dde0d7d5), url('../img/uiback.png');
+  background-size: cover;
+  background-position: center;
+}
+#home .row{
+  justify-content: space-around;
+  margin: auto;
+}
+#home .row #home-content{
+  display: flex;
+  justify-content: center;
+}
+#home h1{
+  margin: 0 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #4A6646;
+}
+#home h3{
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #3E4A3C;
+}
+#home .nav-tabs{
+  display: flex;
+  justify-content: space-around;
+}
+#home .nav-tabs button{
+  border: none;
+  color: #4A6646;
+  font-weight: 600;
+}
+#home .nav-tabs button:hover{
+  color: #7B9977;
+}
+#home .nav-tabs button.active{
+  background: none;
+  color: #7B9977;
+  border-bottom: 2px solid #7B9977;
+}
+#home .row .form{
+  background-color: #f8f8f8;
+  padding: 5px 5px 20px;
+  border-radius: 10px;
+  box-shadow: #0000001a 0px 1px 2px 0px;
+  opacity: 0.9;
+}
+#home .row .form .box input{
+  border-radius: 10px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: 400;
+  background: transparent;
+}
+#home .row .form .form-control:focus{
+  border: 1px solid #4A6646;
+}
+#home .row .form .button input{
+  height: 47px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4A6646;
+  color: #f8f8f8;
+  transition: .5s;
+}
+#home .row .form .label-showPassword{
+  margin: 5px 10px 0;
+}
+#home .row .form a{
+  font-size: 15px;
+  text-decoration: none;
+  color: #4A6646;
+}
+#home .row .form .signUp-button{
+  margin-top: -1px;
+}
+#home .row .form .signUp-button button{
+  width: 60%;
+  margin-left: 20%;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #80824E;
+  color: #f8f8f8;
+  transition: .5s;
+}
+#home .row .form .signUp-button button:hover{
+  background-color: #888A59;
+}
+@media (max-width: 1025px){
+  #home h1{
+    font-size: 40px;
+  }
+  #home h3{
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px){
+  #home{
+    background-image: linear-gradient(#dde0d7b5, #dde0d7d5), url('../img/uiphone.png');
+    text-align: center;
+  }
+  #home h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  #home h3{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  #home .row .form .label-showPassword{
+    margin: 5px 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+  #home .row .form .signUp-button button{
+    margin: 0;
+  }
+}
+@media (max-width: 500px){
+  #home h1{
+    font-size: 33px;
+  }
+  #home h3{
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 390px){
+  #home h1{
+    font-size: 27px;
+  }
+  #home h3{
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 315px){
+  #home{
+    height: 100%;
+    padding-bottom: 50px;
+  }
+  #home h1{
+    font-size: 20px;
+    line-height: 25px;
+  }
+  #home h3{
+    font-size: 12px;
+    line-height: 20px;
+  }
+  #home .row .form .signUp-button button{
+    font-size: 15px;
+  }
+}
+
+/*---------------------------------------------------------
+---------- FOOTER STYLES------
+---------------------------------------------------------*/
+#footer{
+  padding: 10px 30px 50px;
+  font-size: 14px;
+  background: #f8f8f8;
+}
+
+#footer .footer-top{
+  padding: 60px 0 30px 0;
+  background: #f8f8f8;
+}
+
+#footer .footer-top .footer-contact{
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+  font-weight: 700;
+  color: #4A6646;
+}
+#footer .footer-top .footer-contact p{
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #3E4A3C;
+}
+#footer .footer-top h4{
+  font-size: 16px;
+  font-weight: bold;
+  color: #3E4A3C;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-top .social-links a{
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid #4A6646;
+  color: #4A6646;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.5s;
+}
+#footer .footer-top .social-links a:hover{
+  background: #4A6646;
+  color: #f8f8f8;
+}
+
+#footer .footer-bottom{
+  border-top: 1px solid #ced4c3;
+}
+#footer .copyright{
+  float: left;
+  color: #3E4A3C;
+}
+@media (max-width: 768px) {
+  #footer{
+     padding: 10px 30px 70px;
+  }
+  #footer .copyright {
+    text-align: center;
+    padding: 5px 0;
+  }
+}
+
+
+/*------------------------------------------
+----======== CREATE ACCOUNT MODAL ========-----
+------------------------------------------*/
+#CreateAccount-Modalcontent{
+  background: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+}
+#CreateAccount-Modalheader{
+  background-color: #4A6646;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 70px;
+}
+#CreateAccount-Modalheader h2{
+  margin-left: 10px;
+  color: #f8f8f8;
+}
+#CreateAccount-Modalheader button{
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 45px;
+  font-weight: bolder;
+  color: #f8f8f8;
+  transition: .5s;
+}
+#CreateAccount-Modalheader button:hover{
+  color: #E8F6D0;
+}
+#CreateAccount-Modalbody .user-details{
+  width: 90%;
+  margin: auto 4%;
+}
+#CreateAccount-Modalbody .box input{
+  height: 55px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background: transparent;
+}
+#CreateAccount-Modalbody .signUp-showPass{
+  width: 90%;
+  margin: 7px auto;
+}
+#CreateAccount-Modalbody .form-control:focus{
+  border: 1px solid #4A6646;
+}
+.signUp-submit{
+  padding-top: 15px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: end;
+}
+.signUp-submit input{
+  padding: 7px 25px;
+  margin: auto 7px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: .5s;
+}
+.signUp-submit input[type="submit"]{
+  background-color: #80824E;
+  color: #FAFAFA;
+}
+.signUp-submit input[type="submit"]:hover{
+  background-color: #888A59;
+}
+@media screen and (max-width:540px){
+  #CreateAccount-Modalbody .user-details{
+    width: 100%;
+    margin: 0;
+    padding: 5px 20px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+}

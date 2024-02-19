@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> UI-Alperf | Admin | Class </title>
+  <link href="../assets/img/ui.png" rel="icon">
+
+  <!----=======-- Vendor CSS Files --=======---->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!----=======-- Main CSS File --=======---->
+  <link href="../assets/css/admin.css" rel="stylesheet">
+</head>
+<body>
+  <!----=======-- HEADER --=======---->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <!----=======-- LOGO --=======---->
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="admin_dashboard.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/ui.png">
+        <span class="d-none d-lg-block"> UI-Alperf </span>
+      </a>
+      
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- END LOGO -->
+
+    <!----=======-- ICONS NAVIGATION --=======---->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <!----=======-- PROFILE NAV --=======---->
+        <li class="nav-item dropdown pe-3">
+
+          <!----=======-- PROFILE IMAGE ICON --=======---->
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+
+            <div class="nav-img">
+              <img src="../assets/img/uk.jpg" alt="Profile" class="dropdown-toggle">
+            </div>
+
+          </a><!-- END PROFILE IMAGE ICON -->
+
+          <!----=======-- PROFILE DROPDOWN ITEMS --=======---->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Mylene Velasco</h6>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="admin_profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#settings_modal">
+                <i class="bi bi-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <form action="" method="">
+
+                <div class="logout d-flex align-items-center">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <input type="submit" name="logout" value="Log Out">
+                </div>
+                
+              </form>
+           </li>
+          </ul><!-- END PROFILE DROPDOWN ITEMS -->
+        </li><!-- END PROFILE NAV -->
+      </ul>
+    </nav><!-- END ICONS NAVIGATION -->
+  </header><!-- END HEADER -->
+
+  <!----=======-- SIDEBAR --=======---->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <h2 class="d-block d-lg-none">UI-Alperf</h2>
+      </li>
+
+      <!----=======-- DASHBOARD NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="admin_dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- END DASHBOARD NAV -->
+
+      <li class="nav-heading">Pages</li>
+
+      <!----=======-- RESULTS NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#results-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-card-heading"></i></i></i><span>Results</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="results-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- END RESULTS NAV -->
+
+      <!----=======-- FACULTIES PAGE NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="admin_faculty.html">
+          <i class="bi bi-people"></i>
+          <span>Faculties</span>
+        </a>
+      </li><!-- END FACULTIES PAGE NAV -->
+
+      <!----=======-- PROFILE PAGE NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="admin_profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- END PROFILE PAGE NAV -->
+    </ul>
+  </aside><!-- END SIDEBAR-->
+
+  <!----=======-- MAIN --=======---->
+  <main id="main" class="main">
+
+    <!----=======-- PAGE TITLE --=======---->
+    <div class="pagetitle">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="admin_dashboard.html">User</a></li>
+          <li class="breadcrumb-item active">Class</li>
+        </ol>
+      </nav>
+    </div><!-- END PAGE TITLE -->
+
+    <section class="section class">
+
+      <div class="row">
+        <div class="col-xl-12 ccc">
+          <div class="card">
+
+            <div class="card-header">
+              <div class="row">
+                <div class="nnn col-lg-3 col-md-6 col-sm-6"><strong> Section: </strong> Rosal </div>
+                <div class="nnn col-lg-3 col-md-6 col-sm-6"><strong> Instructor: </strong> Doe </div>
+                <div class="nnn col-lg-3 col-md-6 col-sm-6"><strong> No. Students: </strong> 30 </div>
+                <div class="nnn col-lg-3 col-md-6 col-sm-6"><strong> Date: </strong> 07/11/2023 </div>
+                <div class="nnn col-lg-3 col-md-6 col-sm-6"><strong> Observer Name: </strong> Velasco </div>
+              </div>
+            </div>
+
+            <div class="card-body">
+
+              <div class="class_timer_container">
+                <div class="class_timer d-flex align-items-center">
+                  <div class="timer" id="timer">00:00</div>
+                  <div>
+                    <button id="toggle" onclick="toggleTimer()"><i id="toggle-icon" class="bi bi-play-fill"></i></button>
+                    <button id="restart" onclick="restartTimer()" disabled><i class="bi bi-bootstrap-reboot"></i></button>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <form action="">
+
+                <div class="row">
+                  <div class="col-xl-12 mb-3">
+                    <h5>Students doing</h5>
+                    
+                    <div class="legendary justify-content-between">
+                      <button class="legend mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#studentsAbb">Legend:</button>
+                      
+                      <div class="true_colors">
+                        <strong class="y">Time <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="g">Active <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="b">Passive <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="r">Negative <i class="bi bi-circle-fill"></i>;</strong> 
+                      </div>
+                    </div>
+
+                    <div class="abbre collapse" id="studentsAbb">
+                      <p>
+                        <strong>L</strong> - Listening; <strong>Ind</strong> - Individual thinking; <strong>WG</strong> - Worksheet group work; 
+                        <strong>AnQ</strong>  - Answer questions; <strong>SQ</strong>  - Student asks questions; <strong>WC</strong>  - Whole class discuss; 
+                        <strong>SP</strong>  - Student present; <strong>TQ</strong>  - Test/quiz; <strong>W</strong>  - Waiting; <strong>O</strong>  - Other;
+                      </p>
+                    </div>
+
+                    <div class="card rounded-0">
+                      <table>
+                        <tr>
+                          <th class="min">min</th>
+                          <th>L</th>
+                          <th>Ind</th>
+                          <th>WG</th>
+                          <th>AnQ</th>
+                          <th>SQ</th>
+                          <th>WC</th>
+                          <th>SP</th>
+                          <th>TQ</th>
+                          <th>W</th>
+                          <th>O</th>
+                        </tr>
+                        <tr>
+                          <td class="min">0-5</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">5-10</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">10-15</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">15-20</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">20-25</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">25-30</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="col-xl-12 mb-3">
+                    <h5>Instructor doing</h5>
+
+                    <div class="legendary justify-content-between">
+                      <button class="legend mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#instructorsAbb">Legend:</button>
+
+                      <div class="true_colors">
+                        <strong class="y">Time <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="g">Active <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="b">Passive <i class="bi bi-circle-fill"></i>;</strong>
+                        <strong class="r">Negative <i class="bi bi-circle-fill"></i>;</strong> 
+                      </div>
+                    </div>
+
+                    <div class="abbre collapse" id="instructorsAbb">
+                      <p>
+                        <strong>Lec</strong> - Lecturing; <strong>RtW</strong> - Writing; <strong>FUp</strong> - Follow-up; 
+                        <strong>AnQ</strong>  - Answer questions; <strong>PQ</strong>  - Posing questions; <strong>MG</strong>  - Moving/Guiding; 
+                        <strong>1o1</strong>  - One-on-one; <strong>D/V</strong>  - Demonstration; <strong>W</strong>  - Waiting; <strong>O</strong>  - Other;
+                      </p>
+                    </div>
+
+                    <div class="card rounded-0">
+                      <table>
+                        <tr>
+                          <th class="min">min</th>
+                          <th>Lec</th>
+                          <th>RtW</th>
+                          <th>FUp</th>
+                          <th>AnQ</th>
+                          <th>PQ</th>
+                          <th>MG</th>
+                          <th>1o1</th>
+                          <th>D/V</th>
+                          <th>W</th>
+                          <th>O</th>
+                        </tr>
+                        <tr>
+                          <td class="min">0-5</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">5-10</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">10-15</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">15-20</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">20-25</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                        <tr>
+                          <td class="min">25-30</td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                          <td><input type="checkbox" value="1" name="" class="form-control" disabled></td>
+                        </tr>
+                      </table>
+                    </div>
+
+                  </div>
+                  
+                  <div class="col-xl-6 class-submit">
+                    <input type="submit" name="" value="Save">
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main><!-- END MAIN -->
+
+  <!----=======-- FOOTER --=======---->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; 2023 <strong><span> UI-Alperf: Alternative Performance </span></strong><br> All Rights Reserved
+    </div>
+  </footer><!-- END FOOTER -->
+
+<!----=======-- Vendor JS Files --=======---->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!----=======-- Main JS File --=======---->
+<script src="../assets/js/main.js"></script>
+
+
+
+
+
+<!-----------------------------------================================- MODALS -==============================--------------------------------->
+
+
+
+
+
+<!-----------===============- SETTINGS MODAL -===============------------------>
+<div class="modal" id="settings_modal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header settings_modal_header">
+        <h5> Settings </h5>
+        <button type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+      </div>
+
+      <div class="modal-body settings_modal_body">
+        <ul class="nav nav-tabs">
+          <li>
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#settings_general">General</button>
+          </li>
+
+          <li>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#settings_data_control">Data Controls</button>
+          </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+
+          <div class="tab-pane fade show active" id="settings_general">
+
+            <div class="settings_theme">
+              <p>Theme</p>
+
+              <div class="theme_button">
+                <button class="light">Light</button>
+                <button class="dark">Dark</button>
+              </div>
+            </div>
+      
+            <hr>
+  
+            <div class="settings_about">
+              <a href="" class="nav-link collapsed" data-bs-target="#settings_about" data-bs-toggle="collapse">
+                <span>About</span>
+                <i class='bx bxs-chevron-down'></i>
+              </a>
+              <ul id="settings_about" class="nav-content collapse">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita,
+                  harum aliquid molestiae at ratione minus? Sed distinctio eligendi accusamus sunt?</p>
+              </ul>
+            </div>
+
+          </div>
+  
+          <div class="tab-pane fade" id="settings_data_control">
+
+            <div class="settings_clear_works d-flex justify-content-between align-items-center">
+              <p>Clear All Works</p>
+
+              <div class="clear_works_button">
+                <button type="button" data-bs-target="#clear_works_confirmation" data-bs-toggle="modal">Clear</button>
+              </div>
+            </div>
+
+            <hr>
+  
+            <div class="settings_delete_account d-flex justify-content-between align-items-center">
+              <p>Delete Account</p>
+
+              <div class="delete_account_button">
+                <button type="button" data-bs-target="#delete_account_confirmation" data-bs-toggle="modal">Delete</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------===============- SETTINGS CLEAR DATA MODAL CONFIRMATION -===============------------------>
+<div class="modal" id="clear_works_confirmation">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Clear all works?</h5>
+      </div>
+      <div class="modal-body">
+        All of your works will be permanently deleted
+      </div>
+      <div class="modal-footer p-2 clear_works_confirmation">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#settings_modal">Cancel</button>
+
+        <form action="">
+          <input type="submit" value="Clear Data">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-----------===============- SETTINGS DELETE ACCOUNT MODAL CONFIRMATION -===============------------------>
+<div class="modal" id="delete_account_confirmation">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Account?</h5>
+      </div>
+      <div class="modal-body">
+        Your account will be permanently deleted
+      </div>
+      <div class="modal-footer p-2 delete_account_confirmation">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#settings_modal">Cancel</button>
+
+        <form action="">
+          <input type="submit" value="Delete Account">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

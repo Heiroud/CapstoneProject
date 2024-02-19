@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title> UI-Alperf | Admin | Dashboard </title>
+  <link href="../assets/img/ui.png" rel="icon">
+
+  <!----=======-- Vendor CSS Files --=======---->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!----=======-- Main CSS File --=======---->
+  <link href="../assets/css/admin.css" rel="stylesheet">
+</head>
+<body>
+  <!----=======-- HEADER --=======---->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <!----=======-- LOGO --=======---->
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="../index.html" class="logo d-flex align-items-center">
+        <img src="../assets/img/ui.png">
+        <span class="d-none d-lg-block"> UI-Alperf </span>
+      </a>
+      
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- END LOGO -->
+
+    <!----=======-- SEARCH BAR --=======---->
+    <div class="search-bar">
+      <form class="d-flex align-items-center">
+        <input type="text" placeholder="Search reports..." class="form-control">
+        <button type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- END SEARCH BAR -->
+
+    <!----=======-- ICONS NAVIGATION --=======---->
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <!----=======-- SEARCH ICON --=======---->
+        <li class="search-icon nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- END SEARCH ICON -->
+
+        <!----=======-- PROFILE NAV --=======---->
+        <li class="nav-item dropdown pe-3">
+
+          <!----=======-- PROFILE IMAGE ICON --=======---->
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+
+            <div class="nav-img">
+              <img src="../assets/img/uk.jpg" alt="Profile" class="dropdown-toggle">
+            </div>
+
+          </a><!-- END PROFILE IMAGE ICON -->
+
+          <!----=======-- PROFILE DROPDOWN ITEMS --=======---->
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Mylene Velasco</h6>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="admin_profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <form action="" method="">
+
+                <div class="logout d-flex align-items-center">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <input type="submit" name="logout" value="Log Out">
+                </div>
+                
+              </form>
+           </li>
+          </ul><!-- END PROFILE DROPDOWN ITEMS -->
+        </li><!-- END PROFILE NAV -->
+      </ul>
+    </nav><!-- END ICONS NAVIGATION -->
+  </header><!-- END HEADER -->
+
+  <!----=======-- SIDEBAR --=======---->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <h2 class="d-block d-lg-none">UI-Alperf</h2>
+      </li>
+
+      <!----=======-- DASHBOARD NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link" href="admin_dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- END DASHBOARD NAV -->
+
+      <li class="nav-heading">Pages</li>
+
+      <!----=======-- NEW NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link d-none d-lg-block new_class_lg" id="new_lg" data-bs-toggle="modal" data-bs-target="#new_class_modal">
+          <i class="bi bi-plus-circle" id="i"></i>
+          <span>New</span>
+        </a>
+      </li><!-- END NEW NAV -->
+
+      <!----=======-- RESULTS NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#results-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-card-heading"></i><span>Results</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="results-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+          <li>
+            <a href="admin_result.html">
+              <i class="bi bi-circle"></i><span>Section<div class="kilid-name">eleferia</div><div class="kilid-date">07/11/2023</div></span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- END RESULTS NAV -->
+
+      <!----=======-- FACULTIES PAGE NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="admin_faculty.html">
+          <i class="bi bi-people"></i>
+          <span>Faculties</span>
+        </a>
+      </li><!-- END FACULTIES PAGE NAV -->
+
+      <!----=======-- PROFILE PAGE NAV --=======---->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="admin_profile.html">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+      </li><!-- END PROFILE PAGE NAV -->
+
+    </ul>
+  </aside><!-- END SIDEBAR-->
+
+  <!----=======-- MAIN --=======---->
+  <main id="main" class="main">
+
+    <!----=======-- PAGE TITLE --=======---->
+    <div class="pagetitle">
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="admin_dashboard.html">Admin</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- END PAGE TITLE -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+
+            <div class="card-header d-flex justify-content-between align-items-start">
+              <div style="overflow: hidden;">
+                <h5>Section</h5>
+              </div>
+
+              <div class="dropdown">
+                <button type="button" class="dots border-0" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li>
+                    <button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#delete_class_modal"> Delete </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <a href="admin_class.html">
+              <div class="card-body">
+                <p>Instructor</p>
+                <p>No. Students:  </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- END MAIN -->
+
+  <!----=======-- FOOTER --=======---->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; 2023 <strong><span> UI-Alperf: Alternative Performance </span></strong><br> All Rights Reserved
+    </div>
+  </footer><!-- END FOOTER -->
+
+  <a data-bs-toggle="modal" data-bs-target="#new_class_modal" class="new_class_sm d-block d-lg-none d-flex align-items-center justify-content-center"><i class="bi bi-plus-lg"></i></a>
+
+<!----=======-- Vendor JS Files --=======---->
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!----=======-- Main JS File --=======---->
+<script src="../assets/js/main.js"></script>
+
+
+
+
+<!-----------------------------------================================- MODALS -==============================--------------------------------->
+
+
+
+
+<!-----------===============- CREATE CLASS MODAL -===============------------------>
+<div id="new_class_modal" class="modal">
+  <div class="modal-dialog">
+    <div class="modal-content">  
+      <div class="modal-header">
+        <h5>New Class</h5>
+        <button type="button" data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+      </div>
+           
+      <div class="modal-body create_class_moday_body">
+        <form>
+
+          <div class="details row g-2">
+            <div class="col-12">
+              <label> Section </label>
+              <input type="text" class="form-control">
+            </div>
+
+            <div class="col-12">
+              <label> Instructor </label>
+              <select class="form-select">
+                <option selected>Select Instructor</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            
+            <div class="col-md-6">
+              <label> No. Students </label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="col-md-6">
+              <label> Date </label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-12">
+              <label> Observer Name </label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+
+          <div class="text-center mt-3 new_class_next">
+            <input type="submit" value="Next">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-----------===============- DELETE CLASS MODAL -===============------------------>
+<div class="modal" id="delete_class_modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete class?</h5>
+      </div>
+      <div class="modal-body">
+        Class will be permanently deleted
+      </div>
+      <div class="modal-footer p-2 delete_class_confirmation">
+        <button type="button" data-bs-dismiss="modal">Cancel</button>
+
+        <form action="">
+          <input type="submit" value="Delete">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
